@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabeçalho</title>
+
+    <style>
+        h1 {
+
+            background: red;
+        }
+
+
+        .tam-icon {
+            width: 50px;
+            height: 44px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="background: red;">Cabeçalho</h1>
+    <h1>Cabeçalho</h1>
+    <p>
+        <span style="color: aqua;"><b>Lorem</b></span> <strong>gilson</strong> <i>DOLOR</i> <em>AMET</em> consectetur
+        adipisicing elit.
+        Possimus, nihil odio. Distinctio
+
+        <a href="http://127.0.0.1:5500/index0.html" target='_blank'>dolores
+            <img class="tam-icon" src="//cdn.worldvectorlogo.com/logos/mdn.svg"
+                alt="imagem de um leão azul"><!--"width="40" height="33""--> </a>
+
+
+        eligendi
+        quam cumque quibusdam libero quasi nulla. Perferendis<br>
+        <del style="color: red;">Vermelho</del> <ins style="color: blue;">Azul</ins><br>quae fugit <s>tachado</s>dolorum
+        <u>underline</u> quia non quaerat <small>diminiu</small> agua H<sub>2</sub>O
+        commodi,2<sup>2</sup> <q cite="index2.html">COMENTARIOS MEU</q>
+        provident nostrum?
+    </p>
+
+    <pre><cod>
+        // Chinese New Years are on 1/1 in the Chinese calendar
+const chineseNewYear = Temporal.PlainMonthDay.from({
+  monthCode: "M01",
+  day: 1,
+  calendar: "chinese",
+});
+const currentYear = Temporal.Now.plainDateISO().withCalendar("chinese").year;
+let nextCNY = chineseNewYear.toPlainDate({ year: currentYear });
+// If nextCNY is before the current date, move forward by 1 year
+if (Temporal.PlainDate.compare(nextCNY, Temporal.Now.plainDateISO()) <= 0) {
+  nextCNY = nextCNY.add({ years: 1 });
+}
+console.log(
+  `The next Chinese New Year is on ${nextCNY.withCalendar("iso8601").toLocaleString()}`,
+);
+// The next Chinese New Year is on 1/29/2025 (at the time of writing)
+
+    </pre>
+    </cod>
+
+    <hr><!--gera uma linha-->
+
+    <blockquote>
+        <p>Estou fazendo um bloco de citaçãoc <code>console.log </code> </p>
+    </blockquote>
+
+    <div>Eu sou um bloco</div>
+
+</body>
+
+</html>
