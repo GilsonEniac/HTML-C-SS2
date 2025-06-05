@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 800px;
+        }
+
+        table td,
+        table th {
+            border: 1px solid #ccc;
+            padding: 5px;
+            text-align: left;
+        }
+
+        table caption {
+            caption-side: top;
+            text-align: left;
+            font-style: italic;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+
+        tfoot {
+            background: #ddd;
+            font-style: italic;
+
+        }
+
+        .responsive-table {
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+
+    <div class="responsive-table">
+        <table>
+            <caption> Uma descrição para a Tabela</caption>
+            <thead><!--Cabeçalho da tabela-->
+                <tr>
+                    <th>Título 1</th><!--para colunas-->
+                    <th>Título 2</th><!--para colunas-->
+                    <th>Título 3</th><!--para colunas-->
+                </tr> <!--para linhas-->
+
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>linha 1</td>
+                    <td>linha 1</td>
+                    <td>linha 1</td>
+                </tr>
+
+                <tr>
+                    <td>linha 2</td>
+
+                    <td>linha 2</td>
+                    <td>linha 2</td>
+
+                </tr>
+
+                <tr>
+                    <td>linha 3</td>
+                    <td>linha 3</td>
+                    <td>linha 3</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+
+                <tr>
+                    <td colspan="2" rowspan="2"></td>
+                    <td>TOTAL :</td>
+
+                </tr>
+                <tr>
+                    <td>R$ 555,00</td>
+                </tr>
+
+
+
+            </tfoot>
+
+        </table>
+    </div>
+</body>
+
+</html>
