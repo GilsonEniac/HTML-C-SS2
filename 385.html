@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        label {
+            cursor: pointer;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Forms/How_to_structure_a_web_form-->
+    <!--https://www.w3schools.com/html/html_form_input_types.asp-->
+
+
+    <!--
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <section>
+            <h1> Cabeça</h1>
+            <p> o Formulario</p>
+
+            <fieldset>
+                <legend>Descrição</legend>
+                <p>
+                    <input type="text">
+                </p>
+            </fieldset>
+        </section>
+    </form>
+
+    -->
+
+    <form action="#" method="get" target="_blank" autocomplete="off">
+        <P>O meu formulario</P>
+        <p>
+            <label for="Nome"> Nome:</label>
+            <input type="text" id="Nome" name="Nome" placeholder="Seu Nome">
+
+        </p>
+
+        <hr>
+
+        <p>
+
+            <label for="dev">Sou um DEV 0</label>
+            <input type="checkbox" id="dev" name="dev" checked value="sim"><br>
+
+            <label for="dev1"> Sou um DEV 1</label>
+            <input type="checkbox" id="dev1" name="dev1"><br>
+
+            <label for="dev1"> Sou um DEV 2</label>
+            <input type="checkbox" id="dev2" name="dev">
+        </p>
+
+        <hr>
+
+        <p>
+            Genero: <br><br>
+            <label for="feminino">Feminino</label>
+            <input type="radio" id="feminino" name="genero" value="feminino"><br>
+
+            <label for="masculino">Masculino</label>
+            <input type="radio" id="masculino" name="genero" value="masculino"><br>
+
+
+        </p>
+
+        <hr>
+
+        <p> Input Só Data:<br><br>
+            <label for="date"> Date:</label>
+            <input type="date" id="date" name="date" value="1967-05-25">
+
+        </p>
+
+        <hr>
+
+        <p> Input Date Time :<br><br>
+            <label for="datetime"> Date Time:</label>
+            <input type="datetime-local" id="datetime" name="datetime" value="1967-05-25T23:00">
+
+        </p>
+
+        <hr>
+
+        <p> Input Só Time :<br><br>
+            <label for="time"> Date Time:</label>
+            <input type="time" id="time" name="time" value="23:00:03">
+
+        </p>
+
+        <hr>
+
+        <p> Input Cor:<br><br>
+            <label for="cor"> Cor Preferida:</label>
+            <input type="color" id="cor" name="cor" value="#FF0000">
+
+        </p>
+
+        <hr>
+
+        <p> Input e mail:<br><br>
+            <label for="mail">e mail:</label>
+            <input type="email" id="mail" name="mail" placeholder="exemplo email@com.br">
+
+        </p>
+
+        <hr>
+
+        <p> Input de arquivos:<br><br>
+            <label for="file">Sua foto:</label>
+            <input type="file" name="file" accept=".png, .xlsx" multiple>
+
+        </p>
+
+
+        <hr>
+
+        <p> Input e Number:<br><br>
+            <label for="number">Numero:</label>
+            <input type="number" id="number" name="number" placeholder="Digite um número" min="10" max="20" step="2">
+
+        </p>
+
+        <hr>
+
+
+        <p> Input e Password:<br><br>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" name="Password" placeholder="Digite a senha">
+
+        </p>
+
+
+        <hr>
+
+
+        <p> Input de Range<br><br>
+            <label for="range">Uma Range:</label>
+            <input type="range" id="range" name="range" min="1" max="10" step="2" lis="values3">
+            <datalist id="values3">
+                <option value="0" label="0"></option>
+                <option value="25" label="25"></option>
+                <option value="50" label="50"></option>
+                <option value="75" label="75"></option>
+                <option value="100" label="100"></option>
+            </datalist>
+        </p>
+
+        <hr>
+
+        <p> Input de URL:<br><br>
+            <label for="url">Sua URL:</label>
+            <input type="url" id="url" name="url" placeholder="Digite uma URL" aria-placeholder="digite sua URL">
+
+        </p>
+
+        <hr>
+
+        <p> Input de Search:<br><br>
+            <label for="search">Sua Busca:</label>
+            <input type="search" id="search" name="search" placeholder="Buscar...">
+
+        </p>
+
+
+        p> é um select:<br><br>
+        <label for="select">Sua Seleção:</label>
+        <select id="select" name="Select" multiple>
+            <optgroup label="Teste1">
+                <option value="Qualquer_coisa" label="Isso é diferente do valor1" disabled>
+                <option value="Qualquer_coisa" label="Isso é diferente do valor2">
+                <option value="Qualquer_coisa" label="Isso é diferente do valor3" selected>
+            </optgroup>
+            <optgroup label="Teste2">
+                <option value="Qualquer_coisa" label="Isso é diferente do valor1" disabled>
+                <option value="Qualquer_coisa" label="Isso é diferente do valor2">
+                <option value="Qualquer_coisa" label="Isso é diferente do valor3" selected>
+            </optgroup>
+
+
+        </select>
+
+        </p>
+        <hr>
+
+        <p> É um Text Area:<br><br>
+            <label for="textarea">é uma area de texto:</label>
+            <textarea name="textarea" id="textarea" rows="8" cols="9">
+               
+
+            </textarea>
+
+
+        </p>
+
+
+        <hr>
+
+        <p>
+            <button type="submit">Reset</button>
+            <button type="reset">Enviar</button>
+
+        </p>
+
+    </form>
+
+
+
+</body>
+
+</html>
