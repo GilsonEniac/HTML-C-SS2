@@ -1,0 +1,22 @@
+*{
+    border: 0;
+    padding: 0;
+}
+
+
+/* PAra cada clase pai mudar a cor para vermelho par ao primeiro <P>*/
+.pai1 h1+p {
+    color: red
+}
+
+/*Pega o primeiro <h1> depois de <p>*/
+
+.pai1 p+h1{
+    color: yellow;
+}
+
+
+/*Pega todos os <p> depois de h1*/
+.pai2 h1~p{
+    color:blueviolet;
+}

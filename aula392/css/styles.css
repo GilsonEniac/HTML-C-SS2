@@ -1,0 +1,21 @@
+
+/* Seletor all tudo ALL*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1{
+    color: blue;
+}
+
+
+.pai h1+p {
+    color: red
+}
+
+

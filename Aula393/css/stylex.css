@@ -1,0 +1,21 @@
+*{
+    border: 0;
+    padding: 0;
+}
+
+
+[meu-atributo="valor"]{
+color: red;
+
+}
+
+/*é somente um exemplo que da par fazer mas não é da maniera correta*/
+
+[checked]{
+    width: 40px;
+    height: 40px;
+    
+}
+p{
+    color: blue;
+}
