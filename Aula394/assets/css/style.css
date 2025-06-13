@@ -3,33 +3,83 @@
     padding: 0;
 }
 
-[checked]{
-    height: 40px;
-    width: 40px;
+/*
+Pseudo-classes
+https://developer.mozilla.org/pt-BR/docs/Web/CSS/Pseudo-classes
+*/
+
+.heading{
+    transition: all 1s ease-in-out;
+}
+
+.heading:hover{
+background:  red;
+}
+
+a{
+    color: blue;
 }
 
 
-[meu-atributo~="valor1"]{
-    color:  blue;
+/*link que não foram visitados*/
+a:link {
+    color: deeppink;
 }
 
-/*para traços*/
-[meu-atributo|="qualquercoisa"]{
-    color:  red;
+/*links que foram visitados*/
+a:visited{
+    color: firebrick;
 }
 
-/*Qundo começa com qualqeur coisa*/
-[meu-atributo^="ou"]{
-    color: green;
+a:hover{
+    background:  darkmagenta;
+    color:  white;
+    text-decoration: none;
 }
 
-/*Qundo termina com qualquer  coisa*/
-[meu-atributo$="isa"]{
-    color: yellow;
+a:active{
+    background:  yellow;
+    color:  white;
+    text-decoration: none;
 }
 
 
-/*Qundo termina com qualquer  coisa*/
-[meu-atributo*="ont"]{
-    color: brown
+input:checked + p{
+    background:  red;
 }
+
+
+.pai .lista li:first-child{
+
+    background:  red;
+}
+
+
+input :required{
+    background:  red;
+}
+
+/*
+input:checked{
+    width: 50px;
+    height: 50px;
+}
+
+/*
+input:focus{
+    border: 1px solid black;
+    outline: none;
+    box-shadow: 05px rgba(0,0,0,0.5);
+}
+
+input:disabled{
+    background-color: rebeccapurple;
+    cursor: not-allowed;
+}
+
+input:enabled{
+    background-color: yellow;
+    cursor: not-allowed;
+}
+
+*/
