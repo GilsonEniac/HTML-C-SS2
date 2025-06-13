@@ -1,0 +1,35 @@
+*{
+    border: 0;
+    padding: 0;
+}
+
+[checked]{
+    height: 40px;
+    width: 40px;
+}
+
+
+[meu-atributo~="valor1"]{
+    color:  blue;
+}
+
+/*para traços*/
+[meu-atributo|="qualquercoisa"]{
+    color:  red;
+}
+
+/*Qundo começa com qualqeur coisa*/
+[meu-atributo^="ou"]{
+    color: green;
+}
+
+/*Qundo termina com qualquer  coisa*/
+[meu-atributo$="isa"]{
+    color: yellow;
+}
+
+
+/*Qundo termina com qualquer  coisa*/
+[meu-atributo*="ont"]{
+    color: brown
+}
