@@ -1,0 +1,35 @@
+*{
+    border: 0;
+    padding: 0;
+}
+
+ul li::after{ /* before*/
+    content: '^';
+    background:  red;
+    color:  greenyellow;
+    /*display:  block; */
+}
+
+
+p::first-letter{
+    font-size: 50px;
+    display: block;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+
+p::first-line{
+    background:  red;
+}
+
+P::selection{
+    background:  yellowgreen;
+    color: blue;
+}
+::placeholder{
+color:  red;
+}
+
+.from-text::placeholder{
+color: yellowgreen;
+}

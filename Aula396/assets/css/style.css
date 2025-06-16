@@ -1,0 +1,35 @@
+*{
+    border: 0;
+    padding: 0;
+}
+
+/*pode ser usado sempre qe tiver um grupos de irmaão LI ou P exemplo*/
+
+
+
+/*esta configuração foi sobreposta a regra de impares , sempres a ultima sobrepoe*/
+ul li:nth-child(5){
+    background-color: rebeccapurple;
+}
+
+
+/*seleção de linhas pares*/
+ul li:nth-child(even){
+    background-color: turquoise
+}
+
+/*seleção de linhas impares*/
+ul li:nth-child(odd){
+    background-color: yellowgreen
+}
+
+/*pula as linhas*/
+ul li:nth-child(3n){
+    color:  red;
+}
+
+
+/*a partir de um numero começa a pular linhas*/
+ul li:nth-child(3n+5){
+    background-color: darkgreen;
+}
