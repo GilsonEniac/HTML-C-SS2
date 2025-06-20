@@ -1,0 +1,25 @@
+*{
+    border: 0;
+    padding: 0;
+}
+
+/*a DIV padrão tem caracteristica de display block*/
+.texto{
+   /* display: block já é dafault*/  /* não deixa pegar as configurações "inline" */
+   /* box-sizing:content-box ;/*quando usado o margin paddin e omborde será somado ao conteudo, ou seja cresce para fora*/ 
+   box-sizing: border-box; /*mais comum a ser usado*/
+   background:  red;
+    width: 100%px;
+    height: 200px;
+    max-width: 600px;
+    max-height: 500px;
+    min-width: 0;
+    min-height: 100px;
+    margin: 0 auto 50px auto; /*ajusta  no meio da pagina*/
+    padding:  50px;
+    border: 5px solid blue;
+    /*o que tiver de texto apssa para fora a função overflow : hidden*/
+    /* overflow: hidden; /*o teto fica escondido fica coberto*/
+   /* overflow-y: scroll;/*ccria uma barra de rolagen no eixo y * mostra o que passou da block/*/
+    overflow-y:  auto; /*só vai aparecer a barra quando houver texto  coberto*/
+}

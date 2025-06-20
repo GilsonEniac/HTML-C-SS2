@@ -1,0 +1,23 @@
+
+/*
+              ID | Classes, atributo e  pseudo-classes | Elementos e pseudo-elementos
+ #P            1                  0                            0
+.p-classe      0                  1                            0
+*/
+
+#p-id {
+    background:  red;
+}
+
+#p-id.p-classe{
+    background:  yellow;
+}
+
+
+*{
+    border: 0;
+    padding: 0;
+}
+
+
+
