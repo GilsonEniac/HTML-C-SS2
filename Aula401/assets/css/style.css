@@ -1,0 +1,28 @@
+*{
+    border: 0;
+    padding: 0;
+}
+
+
+.grid::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.grid .col {
+   /* display: block; /*vem como default*/
+   /*display:  inline-block; */ 
+   
+   width: 33.33%;
+    height: 300px;
+    background:  red;
+   margin: 30px; 
+   float:  left;
+}
+
+/*
+p{
+    clear: both;
+}
+    */
