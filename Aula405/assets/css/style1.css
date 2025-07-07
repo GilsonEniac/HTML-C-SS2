@@ -22,7 +22,7 @@
 }
 
 .filha1 {/*DEFINIU A DIV FILHA 01 COMO SOBREPOR UMA IMAGEM A FILHA 2 OCUPA O ESPAÇO DEIXADO APLICANDO O POSITION: STATIC QUE É DEFAULT*/
-    position: absolute; /*sobrepoe o pposition :static que é padrão
+ /*  position: absolute; /*sobrepoe o pposition :static que é padrão
     top: 50px; 
     left: 50px; 
     width: 100%;
@@ -37,14 +37,17 @@
 .filha1, .filha2 {
     width: 300px;
     height: 300px;
-    background: rgba(255,0,0,0.5);
+    background: rgba(255,0,0);
     margin: 10px;
     position: static;
 }
 
+
+
 .filha2{
     background:  greenyellow;
     float: left;
+    z-index: 2;/* coloca a div filha 2 sobre a outra div filha 1*/
 }
 /*
 .filha1 {/*DEFINIU A DIV FILHA 01 COMO SOBREPOR UMA IMAGEM A FILHA 2 OCUPA O ESPAÇO DEIXADO APLICANDO O POSITION: STATIC QUE É DEFAULT
@@ -56,14 +59,40 @@
    right: 50px;
 }
 */
-
+/*
+cobre todo a area do browse
 .filha1 {
     position: absolute;
     width:  auto;
     height:  auto;
     top: 0; 
+    right: 0;
     left: 0;
-    bottom: 0;
+     bottom: 0;
   
   
+}
+     */
+
+/* centraliza div no centro do browse
+.filha1 {
+    position: absolute;
+   top: 50%;
+   margin-top: -150px;
+   left:50%;
+   margin-left: -150px;
+
+   
+}
+   */
+
+.filha1 {
+    position: absolute;
+   top: 50%;
+   margin-top: -150px;
+   left:50%;
+   margin-left: -150px;
+   z-index: -1;
+
+   
 }

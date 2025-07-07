@@ -1,0 +1,15 @@
+*{
+    border: 0;
+    padding: 0;
+}
+
+ul{
+    height: 100px;
+    overflow-y: auto;/*comportamento de rolagem*/
+}
+
+ul li.sticky {
+    position: sticky;
+    background: green;
+    top: 0;
+}
